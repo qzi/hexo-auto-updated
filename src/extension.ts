@@ -125,7 +125,7 @@ class ExtensionConfiguration {
     }
 
     public get lineLimit(): number {
-        return this.getValue<number>("lineLimit", 5);
+        return this.getValue<number>("lineLimit", 20);
     }
 
     private m_birthTimeStart: RegExp;
@@ -147,7 +147,7 @@ class ExtensionConfiguration {
     private m_modifiedTimeStart: RegExp;
     public get modifiedTimeStart(): RegExp {
         if (this.m_modifiedTimeStart == null) {
-            this.m_modifiedTimeStart = new RegExp(this.getValue<string>("modifiedTimeStart", "[lL]ast[ -][mM]odified *: "));
+            this.m_modifiedTimeStart = new RegExp(this.getValue<string>("modifiedTimeStart", "^[uU]pdated *: "));
         }
         return this.m_modifiedTimeStart;
     }
@@ -161,7 +161,7 @@ class ExtensionConfiguration {
     }
 
     public get luxonFormat(): string {
-        return this.getValue<string>("luxonFormat", "yyyy/LL/dd HH:mm:ss");
+        return this.getValue<string>("luxonFormat", " yyyy/LL/dd HH:mm:ss");
     }
 
     public get luxonTimezone(): string {
