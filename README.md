@@ -1,14 +1,13 @@
 # Hexo Auto Updated
-A Visual Studio Code extension that update timestamp of `updated` in front matter of hexo when saving markdown document.
+A Visual Studio Code extension specifically designed for the Hexo blog system.    
+It automatically updates the `updated` timestamp in front matter whenever a markdown document is saved.    
 
 ## Features
-Update last modified date and time in front matter when saving document
+Automatically updates the last modified date and time in the front matter when saving a markdown file.
 
-
-Each of the fields will be detected with condition of settings.
-By default settings, lines like the following will be detected:
+Detects lines matching patterns like the following:
 ```
-// updated: 2025-11-09 11:00:00
+updated:  2025/11/14 03:53:29
 ```
 ![Hexo Auto Updated Demo](https://asset.leonvision.online/vscode-marketplace-asset/hexo-auto-updated-demo.gif)    
 
