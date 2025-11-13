@@ -161,7 +161,7 @@ class ExtensionConfiguration {
     }
 
     public get luxonFormat(): string {
-        return this.getValue<string>("luxonFormat", " yyyy/LL/dd HH:mm:ss");
+        return this.getValue<string>("luxonFormat", " yyyy-LL-dd HH:mm:ss");
     }
 
     public get luxonTimezone(): string {
@@ -173,7 +173,7 @@ class ExtensionConfiguration {
     }
 
     public get momentFormat(): string {
-        return this.getValue<string>("momentFormat", "YYYY/MM/DD HH:mm:ss");
+        return this.getValue<string>("momentFormat", "YYYY-MM-DD HH:mm:ss");
     }
 
     public get hasMomentFormat(): boolean {

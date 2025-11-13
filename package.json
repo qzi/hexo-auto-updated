@@ -2,7 +2,7 @@
     "name": "hexo-auto-updated",
     "displayName": "Hexo Auto Updated",
     "description": "A Visual Studio Code extension specifically designed for the Hexo blog system. It automatically updates the last modified timestamp in front matter whenever a markdown document is saved.",
-    "version": "0.1.5",
+    "version": "0.1.7",
     "publisher": "leon-qiu",
     "license": "Zlib",
     "engines": {
@@ -66,7 +66,7 @@
                         "description": "%luxonFormat.description%",
                         "type": "string",
                         "scope": "language-overridable",
-                        "default": "yyyy/LL/dd HH:mm:ss"
+                        "default": "yyyy-LL-dd HH:mm:ss"
                     },
                     "hexoAutoUpdated.luxonTimezone": {
                         "description": "%luxonTimezone.description%",
@@ -78,7 +78,7 @@
                         "description": "%momentFormat.description%",
                         "type": "string",
                         "scope": "language-overridable",
-                        "default": "YYYY/MM/DD HH:mm:ss"
+                        "default": "YYYY-MM-DD HH:mm:ss"
                     }
                 }
             }
@@ -92,16 +92,15 @@
         "vsce-go": "vsce package --allow-star-activation && vsce publish --allow-star-activation"
     },
     "devDependencies": {
-        "@types/mocha": "^10.0.1",
-        "@types/node": "^18.16.3",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "^18.19.0",
         "@types/vscode": "^1.74.0",
-        "@vscode/test-electron": "^2.3.0",
-        "@vscode/vsce": "^2.19.0",
-        "azure-devops-node-api": "^12.0.0",
-        "typescript": "^5.0.4"
+        "@vscode/test-electron": "^2.4.1",
+        "@vscode/vsce": "^3.7.0",
+        "typescript": "^5.3.3"
     },
     "dependencies": {
-        "luxon": "^3.3.0",
-        "moment": "^2.29.4"
+        "luxon": "^3.5.0",
+        "moment": "^2.30.1"
     }
 }
