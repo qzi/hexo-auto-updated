@@ -1,12 +1,12 @@
 {
     "name": "hexo-auto-updated",
     "displayName": "Hexo Auto Updated",
-    "description": "Update timestamp in markdown front matter automatically on save",
-    "version": "0.1.3",
+    "description": "A Visual Studio Code extension specifically designed for the Hexo blog system. It automatically updates the last modified timestamp in front matter whenever a markdown document is saved.",
+    "version": "0.1.5",
     "publisher": "leon-qiu",
     "license": "Zlib",
     "engines": {
-        "vscode": "^1.42.0"
+        "vscode": "^1.74.0"
     },
     "repository": {
         "type": "git",
@@ -23,58 +23,58 @@
     "contributes": {
         "configuration": [
             {
-                "title": "Auto Time Stamp",
+                "title": "Hexo Auto Updated",
                 "type": "object",
                 "properties": {
-                    "autoTimeStamp.filenamePattern": {
+                    "hexoAutoUpdated.filenamePattern": {
                         "description": "%filenamePattern.description%",
                         "type": "string",
                         "scope": "language-overridable",
                         "default": "^(?!.*[/\\\\]\\.vscode[/\\\\]settings.json$)"
                     },
-                    "autoTimeStamp.lineLimit": {
+                    "hexoAutoUpdated.lineLimit": {
                         "description": "%lineLimit.description%",
                         "type": "integer",
                         "scope": "language-overridable",
-                        "default": 5
+                        "default": 10
                     },
-                    "autoTimeStamp.birthTimeStart": {
+                    "hexoAutoUpdated.birthTimeStart": {
                         "description": "%birthTimeStart.description%",
                         "type": "string",
                         "scope": "language-overridable",
-                        "default": "[cC]reated *: "
+                        "default": "date *: "
                     },
-                    "autoTimeStamp.birthTimeEnd": {
+                    "hexoAutoUpdated.birthTimeEnd": {
                         "description": "%birthTimeEnd.description%",
                         "type": "string",
                         "scope": "language-overridable",
                         "default": "$"
                     },
-                    "autoTimeStamp.modifiedTimeStart": {
+                    "hexoAutoUpdated.modifiedTimeStart": {
                         "description": "%modifiedTimeStart.description%",
                         "type": "string",
                         "scope": "language-overridable",
-                        "default": "[lL]ast[ -][mM]odified *: "
+                        "default": "^updated *: "
                     },
-                    "autoTimeStamp.modifiedTimeEnd": {
+                    "hexoAutoUpdated.modifiedTimeEnd": {
                         "description": "%modifiedTimeEnd.description%",
                         "type": "string",
                         "scope": "language-overridable",
                         "default": "$"
                     },
-                    "autoTimeStamp.luxonFormat": {
+                    "hexoAutoUpdated.luxonFormat": {
                         "description": "%luxonFormat.description%",
                         "type": "string",
                         "scope": "language-overridable",
                         "default": "yyyy/LL/dd HH:mm:ss"
                     },
-                    "autoTimeStamp.luxonTimezone": {
+                    "hexoAutoUpdated.luxonTimezone": {
                         "description": "%luxonTimezone.description%",
                         "type": "string",
                         "scope": "language-overridable",
                         "default": "system"
                     },
-                    "autoTimeStamp.momentFormat": {
+                    "hexoAutoUpdated.momentFormat": {
                         "description": "%momentFormat.description%",
                         "type": "string",
                         "scope": "language-overridable",
@@ -94,7 +94,7 @@
     "devDependencies": {
         "@types/mocha": "^10.0.1",
         "@types/node": "^18.16.3",
-        "@types/vscode": "^1.42.0",
+        "@types/vscode": "^1.74.0",
         "@vscode/test-electron": "^2.3.0",
         "@vscode/vsce": "^2.19.0",
         "azure-devops-node-api": "^12.0.0",

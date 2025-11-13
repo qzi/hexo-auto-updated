@@ -95,7 +95,7 @@ class ExtensionConfiguration {
     private m_config: vscode.WorkspaceConfiguration;
 
     public constructor(document: vscode.TextDocument) {
-        this.m_config = vscode.workspace.getConfiguration("lpubsppop01.autoTimeStamp", document);
+        this.m_config = vscode.workspace.getConfiguration("hexoAutoUpdated", document);
     }
 
     private getValue<T>(propertyName: string, defaultValue: T): T {
@@ -147,7 +147,7 @@ class ExtensionConfiguration {
     private m_modifiedTimeStart: RegExp;
     public get modifiedTimeStart(): RegExp {
         if (this.m_modifiedTimeStart == null) {
-            this.m_modifiedTimeStart = new RegExp(this.getValue<string>("modifiedTimeStart", "^[uU]pdated *: "));
+            this.m_modifiedTimeStart = new RegExp(this.getValue<string>("modifiedTimeStart", "^updated *: "));
         }
         return this.m_modifiedTimeStart;
     }
