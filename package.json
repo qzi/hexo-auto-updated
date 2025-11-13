@@ -2,7 +2,7 @@
     "name": "hexo-auto-updated",
     "displayName": "Hexo Auto Updated",
     "description": "Update timestamp in markdown front matter automatically on save",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "publisher": "leon-qiu",
     "license": "Zlib",
     "engines": {
