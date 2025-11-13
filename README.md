@@ -21,4 +21,4 @@ Created by **LEON D. QIU**, inspired by _lpubsppop01@[vscode-auto-timestamp](htt
 
 
 ## License
-[ZLIB LICENSE](https://github.com/lpubsppop01/vscode-auto-timestamp/raw/master/LICENSE.txt)
+[ZLIB LICENSE](https://raw.githubusercontent.com/qzi/hexo-auto-updated/refs/heads/master/LICENSE.txt)
