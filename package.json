@@ -2,7 +2,7 @@
     "name": "hexo-auto-updated",
     "displayName": "Hexo Auto Updated",
     "description": "Update timestamp in markdown front matter automatically on save",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "leon-qiu",
     "license": "Zlib",
     "engines": {
@@ -89,8 +89,7 @@
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
         "test": "npm run compile && node ./out/test/runTest.js",
-        "vsce-package": "vsce package",
-        "vsce-publish": "vsce publish"
+        "vsce-go": "vsce package --allow-star-activation && vsce publish --allow-star-activation"
     },
     "devDependencies": {
         "@types/mocha": "^10.0.1",
