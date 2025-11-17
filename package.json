@@ -2,7 +2,7 @@
     "name": "hexo-auto-updated",
     "displayName": "Hexo Auto Updated",
     "description": "A Visual Studio Code extension specifically designed for the Hexo blog system. It automatically updates the last modified timestamp in front matter whenever a markdown document is saved.",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "publisher": "leon-qiu",
     "license": "Zlib",
     "engines": {
