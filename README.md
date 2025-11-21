@@ -7,16 +7,16 @@ Automatically updates the last modified date and time in the front matter when s
 
 Detects lines matching patterns like the following:
 ```
-updated: 2025-11-20 05:17:24
+updated: 2025-11-22 00:04:07
 ```
 ![Hexo Auto Updated Demo](https://asset.leonvision.online/vscode-marketplace-asset/hexo-auto-updated-demo.gif)    
 
 You can install the extension, _[Hexo Auto Updated](https://marketplace.visualstudio.com/items?itemName=leon-qiu.hexo-auto-updated)_ here.
 
 ## Visual Studio Code Derivative 
-Most of VS Code derivatives use the Open VSX Registry instead of the Microsoft Marketplace, but they allow for local installation of VSIX files.    
+Most of vscode derivatives use the Open VSX Registry instead of the Microsoft Marketplace, but they allow for local installation of vsix files.    
 You can download vsix file from GitHub release page, and install it locally.    
-This extension has been tested in VS Code derivatives such as Cursor, Kio, and Antigracity.
+This extension has been tested in vscode derivatives such as Cursor, Kio, and Antigravity.
 
 ## Author
 
