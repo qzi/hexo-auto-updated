@@ -25,7 +25,7 @@
     ],
     "icon": "images/icon.png",
     "activationEvents": [
-        "*"
+        "onLanguage:markdown"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -97,7 +97,7 @@
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
         "test": "npm run compile && node ./out/test/runTest.js",
-        "vsce-go": "vsce package --allow-star-activation && vsce publish --allow-star-activation"
+        "vsce-go": "vsce package && vsce publish"
     },
     "devDependencies": {
         "@types/mocha": "^10.0.10",
