@@ -93,10 +93,10 @@
         ]
     },
     "scripts": {
-        "vscode:prepublish": "npm run compile",
+        "vscode:prepublish": "bun run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "test": "npm run compile && node ./out/test/runTest.js",
+        "test": "bun run compile && bun run ./out/test/runTest.ts",
         "vsce-go": "vsce package && vsce publish"
     },
     "devDependencies": {
@@ -105,6 +105,7 @@
         "@types/vscode": "^1.74.0",
         "@vscode/test-electron": "^2.4.1",
         "@vscode/vsce": "^3.7.0",
+        "glob": "^13.0.0",
         "typescript": "^5.3.3"
     },
     "dependencies": {
