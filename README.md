@@ -11,12 +11,13 @@ updated: 2025-11-22 00:04:07
 ```
 ![Hexo Auto Updated Demo](https://asset.leonvision.online/vscode-marketplace-asset/hexo-auto-updated-demo.gif)    
 
-You can install the extension, _[Hexo Auto Updated](https://marketplace.visualstudio.com/items?itemName=leon-qiu.hexo-auto-updated)_ here.
+You can install the extension, **Hexo Auto Updated** here.
 
-## Visual Studio Code Derivative 
-Most of vscode derivatives use the Open VSX Registry instead of the Microsoft Marketplace, but they allow for local installation of vsix files.    
-You can download vsix file from GitHub release page, and install it locally.    
-This extension has been tested in vscode derivatives such as Cursor, Kio, and Antigravity.
+
+
+[**Hexo Auto Updated**](https://marketplace.visualstudio.com/items?itemName=leon-qiu.hexo-auto-updated) in Visual Studio Code Marketplace  
+[**Hexo Auto Updated**](https://open-vsx.org/extension/leon-qiu/hexo-auto-updated) in Open-VSX Marketplace  
+
 
 ## Author
 
